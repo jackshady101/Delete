@@ -5,69 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ludo - Data Deletion Request</title>
     <style>
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
-            padding: 40px 20px; 
-            background-color: #f4f7f6;
-            line-height: 1.6;
-        }
-        .container { 
-            max-width: 500px; 
-            margin: auto; 
-            background: white; 
-            padding: 30px; 
-            border-radius: 12px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        h1 { color: #333; font-size: 24px; margin-bottom: 10px; }
-        p { color: #666; margin-bottom: 20px; }
-        label { display: block; font-weight: bold; margin-bottom: 8px; color: #444; }
-        input[type="email"] { 
-            width: 100%; 
-            padding: 12px; 
-            margin-bottom: 20px; 
-            border: 1px solid #ccc; 
-            border-radius: 6px; 
-            box-sizing: border-box; 
-        }
-        button { 
-            width: 100%;
-            background: #d9534f; 
-            color: white; 
-            border: none; 
-            padding: 14px; 
-            border-radius: 6px; 
-            font-size: 16px; 
-            font-weight: bold;
-            cursor: pointer; 
-            transition: background 0.3s;
-        }
-        button:hover { background: #c9302c; }
-        .warning { 
-            background: #fff3cd; 
-            color: #856404; 
-            padding: 10px; 
-            border-radius: 4px; 
-            font-size: 14px; 
-            margin-bottom: 20px;
-        }
+        body { font-family: sans-serif; padding: 40px 20px; background-color: #f4f7f6; text-align: center; }
+        .container { max-width: 400px; margin: auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        input[type="email"] { width: 100%; padding: 12px; margin: 20px 0; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { width: 100%; background: #d9534f; color: white; border: none; padding: 14px; border-radius: 5px; cursor: pointer; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Delete My Account</h1>
-        <p>Please enter the email address associated with your Ludo account to request permanent data deletion.</p>
+        <h2>Delete My Ludo Account</h2>
+        <p>Enter your Google Login email to request data deletion.</p>
         
-        <div class="warning">
-            <strong>Warning:</strong> Deleting your account will permanently remove all game stats, scores, and profile data from our servers.
-        </div>
-
         <form action="https://formspree.io/f/xvzzgaeb" method="POST">
-            <label for="email">Google Login Email:</label>
-            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
-            
+            <input type="email" name="email" placeholder="example@gmail.com" required>
             <input type="text" name="_gotcha" style="display:none">
-
             <button type="submit">Submit Deletion Request</button>
         </form>
     </div>
