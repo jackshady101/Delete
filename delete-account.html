@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ludo - Data Deletion Request</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        .container { max-width: 600px; margin: auto; border: 1px solid #ddd; padding: 20px; border-radius: 8px; }
+        button { background: #d9534f; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Delete My Ludo Account</h1>
+        <p>If you would like to permanently delete your Ludo account and all associated data (Name, Email, and Game Progress), please fill out the form below.</p>
+        
+        <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
+            <label>Your Google Login Email:</label><br>
+            <input type="email" name="email" required style="width:100%; padding:8px; margin:10px 0;"><br>
+            
+            <p><strong>Warning:</strong> This action cannot be undone. All your Ludo stats will be lost.</p>
+            <button type="submit">Submit Deletion Request</button>
+        </form>
+    </div>
+</body>
+</html>
